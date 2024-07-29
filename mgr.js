@@ -13,7 +13,7 @@ define(['managerAPI',
 
     API.setName('mgr');
     API.addSettings('skip',true);
-/*
+
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
     let blackLabels = [];
@@ -52,7 +52,7 @@ define(['managerAPI',
             'History', 'Arts', 'Humanities', 'English', 
             'Philosophy', 'Music', 'Literature'
         ])
-    });*/
+    });
 
     API.addTasksSet({
         instructions: [{
