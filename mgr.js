@@ -145,7 +145,8 @@ define(['managerAPI',
         
         
         {inherit: 'intro'},
-        {
+	{inherit: 'gendercareer'},
+        /*{
             //mixer:'random',
            // data:[
                 //{inherit: 'explicits'},
@@ -159,7 +160,7 @@ define(['managerAPI',
                    // ]
                // }
             ]
-        },
+        },*/
 
 		{inherit: 'uploading'},
         {inherit: 'lastpage'},
