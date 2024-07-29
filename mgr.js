@@ -28,7 +28,7 @@ define(['managerAPI',
     }
 
     API.addGlobal({
-        gendercareer:{},
+        raceiat:{},
         //YBYB: change when copying back to the correct folder
         baseURL: './images/',
         raceSet:raceSet,
@@ -36,21 +36,25 @@ define(['managerAPI',
         whiteLabels:whiteLabels,
         //Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
-        mWords : API.shuffle([
-            'Man', 'Son', 'Father', 'Boy', 'Uncle',
-            'Grandpa', 'Husband', 'Male'
+        posWords : API.shuffle([
+            'Love', 'Cheer', 'Friend', 'Pleasure',
+            'Adore', 'Cheerful', 'Friendship', 'Joyful', 
+            'Smiling','Cherish', 'Excellent', 'Glad', 
+            'Joyous', 'Spectacular', 'Appealing', 'Delight', 
+            'Excitement', 'Laughing', 'Attractive','Delightful', 
+            'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
+            'Fantastic', 'Happy', 'Lovely', 'Terrific', 
+            'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
         ]), 
-        fWords : API.shuffle([
-            'Mother', 'Wife', 'Aunt', 'Woman', 
-            'Girl', 'Female', 'Grandma', 'Daughter'
-        ]),
-	      sWords : API.shuffle([
-            'Astronomy', 'Math', 'Chemistry', 'Physics', 
-            'Biology', 'Geology', 'Engineering'
-        ])
-	      lWords : API.shuffle([
-            'History', 'Arts', 'Humanities', 'English', 
-            'Philosophy', 'Music', 'Literature'
+        negWords : API.shuffle([
+            'Abuse', 'Grief', 'Poison', 'Sadness', 
+            'Pain', 'Despise', 'Failure', 'Nasty', 
+            'Angry', 'Detest', 'Horrible', 'Negative', 
+            'Ugly', 'Dirty', 'Gross', 'Evil', 
+            'Rotten','Annoy', 'Disaster', 'Horrific',  
+            'Scorn', 'Awful', 'Disgust', 'Hate', 
+            'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
+            'Hatred', 'Hurtful', 'Sickening', 'Yucky'
         ])
     });
 
@@ -68,17 +72,23 @@ define(['managerAPI',
             header: 'Welcome'
         }],
 
-       /* gendercareeriat_instructions: [{
+        raceiat_instructions: [{
             inherit: 'instructions',
-            name: 'gendercareeriat_instructions',
-            templateUrl: 'gendercareeriat_instructions.jst',
+            name: 'raceiat_instructions',
+            templateUrl: 'raceiat_instructions.jst',
             title: 'IAT Instructions',
             header: 'Implicit Association Test'
-        }],*/
+        }],
 
-        gendercareer: [{
+        explicits: [{
+            type: 'quest',
+            name: 'explicits',
+            scriptUrl: 'explicits.js'
+        }],
+
+        raceiat: [{
             type: 'time',
-            name: 'gendercareer',
+            name: 'raceiat',
             scriptUrl: 'gendercareer.js'
         }],
 
@@ -145,22 +155,21 @@ define(['managerAPI',
         
         
         {inherit: 'intro'},
-	{inherit: 'gendercareer'},
-        /*{
-            //mixer:'random',
-           // data:[
+        {
+            mixer:'random',
+            data:[
                 //{inherit: 'explicits'},
 
                 // force the instructions to preceed the iat
-               // {
+                {
                     mixer: 'wrapper',
                     data: [
-                        //{inherit: 'gendercareeriat_instructions'},
-                        {inherit: 'gendercareer'}
-                   // ]
-               // }
+                        //{inherit: 'raceiat_instructions'},
+                        {inherit: 'raceiat'}
+                    ]
+                }
             ]
-        },*/
+        },
 
 		{inherit: 'uploading'},
         {inherit: 'lastpage'},
