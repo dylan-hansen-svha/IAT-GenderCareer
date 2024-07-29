@@ -68,7 +68,7 @@ define(['managerAPI',
             header: 'Welcome'
         }],
 
-        raceiat_instructions: [{
+        gendercareeriat_instructions: [{
             inherit: 'instructions',
             name: 'gendercareeriat_instructions',
             templateUrl: 'gendercareeriat_instructions.jst',
@@ -76,7 +76,7 @@ define(['managerAPI',
             header: 'Implicit Association Test'
         }],
 
-        raceiat: [{
+        gendercareer: [{
             type: 'time',
             name: 'gendercareer',
             scriptUrl: 'gendercareer.js'
