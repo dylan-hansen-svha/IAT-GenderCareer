@@ -30,7 +30,7 @@ define(['managerAPI',
     API.addGlobal({
         gendercareer:{},
         //YBYB: change when copying back to the correct folder
-        baseURL: './',
+        baseURL: './images/',
         raceSet:raceSet,
         blackLabels:blackLabels,
         whiteLabels:whiteLabels,
