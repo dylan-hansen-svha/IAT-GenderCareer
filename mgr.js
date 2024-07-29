@@ -154,7 +154,7 @@ define(['managerAPI',
                // {
                     mixer: 'wrapper',
                     data: [
-                        {inherit: 'gendercareeriat_instructions'},
+                        //{inherit: 'gendercareeriat_instructions'},
                         {inherit: 'gendercareer'}
                    // ]
                // }
