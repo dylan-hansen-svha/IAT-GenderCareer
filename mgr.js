@@ -89,7 +89,7 @@ define(['managerAPI',
         raceiat: [{
             type: 'time',
             name: 'raceiat',
-            scriptUrl: 'gendercareer.js'
+            scriptUrl: 'raceiat.js'
         }],
 
         lastpage: [{
@@ -158,13 +158,13 @@ define(['managerAPI',
         {
             mixer:'random',
             data:[
-                //{inherit: 'explicits'},
+                {inherit: 'explicits'},
 
                 // force the instructions to preceed the iat
                 {
                     mixer: 'wrapper',
                     data: [
-                        //{inherit: 'raceiat_instructions'},
+                        {inherit: 'raceiat_instructions'},
                         {inherit: 'raceiat'}
                     ]
                 }
