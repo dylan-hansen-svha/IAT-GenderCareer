@@ -13,7 +13,7 @@ define(['managerAPI',
 
     API.setName('mgr');
     API.addSettings('skip',true);
-
+/*
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
     let blackLabels = [];
@@ -52,7 +52,7 @@ define(['managerAPI',
             'History', 'Arts', 'Humanities', 'English', 
             'Philosophy', 'Music', 'Literature'
         ])
-    });
+    });*/
 
     API.addTasksSet({
         instructions: [{
@@ -68,13 +68,13 @@ define(['managerAPI',
             header: 'Welcome'
         }],
 
-        gendercareeriat_instructions: [{
+       /* gendercareeriat_instructions: [{
             inherit: 'instructions',
             name: 'gendercareeriat_instructions',
             templateUrl: 'gendercareeriat_instructions.jst',
             title: 'IAT Instructions',
             header: 'Implicit Association Test'
-        }],
+        }],*/
 
         gendercareer: [{
             type: 'time',
