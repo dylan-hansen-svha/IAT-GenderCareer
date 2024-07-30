@@ -14,8 +14,24 @@ define(['managerAPI',
     API.setName('mgr');
     API.addSettings('skip',true);
 
+//Randomly select which of two sets of category labels to use.
+    let raceSet = API.shuffle(['a','b'])[0];
+    let blackLabels = [];
+    let whiteLabels = [];
+
+    if (raceSet == 'a') {
+        blackLabels.push('African Americans');
+        whiteLabels.push('European Americans');
+    } else {
+        blackLabels.push('Black people');
+        whiteLabels.push('White people');
+    }
+
     API.addGlobal({
         gendercareer:{},
+	raceSet:raceSet,
+        blackLabels:blackLabels,
+        whiteLabels:whiteLabels,
 	mWords : API.shuffle([
             'Ben', 'Paul', 'Daniel', 'John', 'Jeffrey'
         ]), 
