@@ -56,18 +56,7 @@ define(['managerAPI',
             'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
             'Hatred', 'Hurtful', 'Sickening', 'Yucky'
         ])
-    });
-
-API.addGlobal({
-        gendercareer:{},
-        //YBYB: change when copying back to the correct folder
-        //baseURL: './images/',
-        //raceSet:raceSet,
-        //blackLabels:blackLabels,
-        //whiteLabels:whiteLabels,
-        //Select randomly what attribute words to see. 
-        //Based on Axt, Feng, & Bar-Anan (2021).
-        mWords : API.shuffle([
+	mWords : API.shuffle([
             'Man', 'Son', 'Father', 'Boy', 'Uncle',
             'Grandpa', 'Husband', 'Male'
         ]), 
@@ -84,6 +73,7 @@ API.addGlobal({
             'Philosophy', 'Music', 'Literature'
         ])
     });
+
 
     API.addTasksSet({
         instructions: [{
