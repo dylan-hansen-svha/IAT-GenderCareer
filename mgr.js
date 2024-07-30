@@ -164,7 +164,7 @@ define(['managerAPI',
         {
             mixer:'random',
             data:[
-                //{inherit: 'explicits'},
+                {inherit: 'gendercareer'},
 
                 // force the instructions to preceed the iat
                 {
