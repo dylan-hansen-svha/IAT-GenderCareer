@@ -15,7 +15,7 @@ define(['managerAPI',
     API.addSettings('skip',true);
 
     //Randomly select which of two sets of category labels to use.
-    let raceSet = API.shuffle(['a','b'])[0];
+   /* let raceSet = API.shuffle(['a','b'])[0];
     let blackLabels = [];
     let whiteLabels = [];
 
@@ -25,18 +25,18 @@ define(['managerAPI',
     } else {
         blackLabels.push('Black people');
         whiteLabels.push('White people');
-    }
+    }*/
 
     API.addGlobal({
         raceiat:{},
         //YBYB: change when copying back to the correct folder
-        baseURL: './images/',
-        raceSet:raceSet,
-        blackLabels:blackLabels,
-        whiteLabels:whiteLabels,
+        //baseURL: './images/',
+       // raceSet:raceSet,
+        //blackLabels:blackLabels,
+        //whiteLabels:whiteLabels,
         //Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
-        posWords : API.shuffle([
+        /*posWords : API.shuffle([
             'Love', 'Cheer', 'Friend', 'Pleasure',
             'Adore', 'Cheerful', 'Friendship', 'Joyful', 
             'Smiling','Cherish', 'Excellent', 'Glad', 
@@ -55,7 +55,7 @@ define(['managerAPI',
             'Scorn', 'Awful', 'Disgust', 'Hate', 
             'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
             'Hatred', 'Hurtful', 'Sickening', 'Yucky'
-        ]),
+        ]),*/
 	mWords : API.shuffle([
             'Ben', 'Paul', 'Daniel', 'John', 'Jeffrey'
         ]), 
