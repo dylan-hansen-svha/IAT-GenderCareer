@@ -16,33 +16,6 @@ define(['managerAPI',
 
     API.addGlobal({
         gendercareer:{},
-        //YBYB: change when copying back to the correct folder
-        //baseURL: './images/',
-       // raceSet:raceSet,
-        //blackLabels:blackLabels,
-        //whiteLabels:whiteLabels,
-        //Select randomly what attribute words to see. 
-        //Based on Axt, Feng, & Bar-Anan (2021).
-        /*posWords : API.shuffle([
-            'Love', 'Cheer', 'Friend', 'Pleasure',
-            'Adore', 'Cheerful', 'Friendship', 'Joyful', 
-            'Smiling','Cherish', 'Excellent', 'Glad', 
-            'Joyous', 'Spectacular', 'Appealing', 'Delight', 
-            'Excitement', 'Laughing', 'Attractive','Delightful', 
-            'Fabulous', 'Glorious', 'Pleasing', 'Beautiful', 
-            'Fantastic', 'Happy', 'Lovely', 'Terrific', 
-            'Celebrate', 'Enjoy', 'Magnificent', 'Triumph'
-        ]), 
-        negWords : API.shuffle([
-            'Abuse', 'Grief', 'Poison', 'Sadness', 
-            'Pain', 'Despise', 'Failure', 'Nasty', 
-            'Angry', 'Detest', 'Horrible', 'Negative', 
-            'Ugly', 'Dirty', 'Gross', 'Evil', 
-            'Rotten','Annoy', 'Disaster', 'Horrific',  
-            'Scorn', 'Awful', 'Disgust', 'Hate', 
-            'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
-            'Hatred', 'Hurtful', 'Sickening', 'Yucky'
-        ]),*/
 	mWords : API.shuffle([
             'Ben', 'Paul', 'Daniel', 'John', 'Jeffrey'
         ]), 
@@ -75,13 +48,13 @@ define(['managerAPI',
             header: 'Welcome'
         }],
 
-        raceiat_instructions: [{
+        /*raceiat_instructions: [{
             inherit: 'instructions',
             name: 'raceiat_instructions',
             templateUrl: 'raceiat_instructions.jst',
             title: 'IAT Instructions',
             header: 'Implicit Association Test'
-        }],
+        }],*/
 
 	gendercareeriat_instructions: [{
             inherit: 'instructions',
@@ -91,7 +64,7 @@ define(['managerAPI',
             header: 'Implicit Association Test'
         }],
 
-        explicits: [{
+        /*explicits: [{
             type: 'quest',
             name: 'explicits',
             scriptUrl: 'explicits.js'
@@ -101,7 +74,7 @@ define(['managerAPI',
             type: 'time',
             name: 'raceiat',
             scriptUrl: 'raceiat.js'
-        }],
+        }],*/
 
 	gendercareer: [{
             type: 'time',
