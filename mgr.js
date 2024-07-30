@@ -80,6 +80,14 @@ define(['managerAPI',
             header: 'Implicit Association Test'
         }],
 
+	gendercareeriat_instructions: [{
+            inherit: 'instructions',
+            name: 'gendercareeriat_instructions',
+            templateUrl: 'gendercareeriat_instructions.jst',
+            title: 'IAT Instructions',
+            header: 'Implicit Association Test'
+        }],
+
         explicits: [{
             type: 'quest',
             name: 'explicits',
@@ -164,6 +172,7 @@ define(['managerAPI',
         {
             mixer:'random',
             data:[
+		{inherit: 'gendercareeriat_instructions'},
                 {inherit: 'gendercareer'},
 
                 // force the instructions to preceed the iat
