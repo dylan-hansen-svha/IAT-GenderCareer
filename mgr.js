@@ -58,6 +58,33 @@ define(['managerAPI',
         ])
     });
 
+API.addGlobal({
+        gendercareer:{},
+        //YBYB: change when copying back to the correct folder
+        //baseURL: './images/',
+        //raceSet:raceSet,
+        //blackLabels:blackLabels,
+        //whiteLabels:whiteLabels,
+        //Select randomly what attribute words to see. 
+        //Based on Axt, Feng, & Bar-Anan (2021).
+        mWords : API.shuffle([
+            'Man', 'Son', 'Father', 'Boy', 'Uncle',
+            'Grandpa', 'Husband', 'Male'
+        ]), 
+        fWords : API.shuffle([
+            'Mother', 'Wife', 'Aunt', 'Woman', 
+            'Girl', 'Female', 'Grandma', 'Daughter'
+        ]),
+	sWords : API.shuffle([
+            'Astronomy', 'Math', 'Chemistry', 'Physics', 
+            'Biology', 'Geology', 'Engineering'
+        ])
+	lWords : API.shuffle([
+            'History', 'Arts', 'Humanities', 'English', 
+            'Philosophy', 'Music', 'Literature'
+        ])
+    });
+
     API.addTasksSet({
         instructions: [{
             type: 'message',
