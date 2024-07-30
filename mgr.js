@@ -55,7 +55,7 @@ define(['managerAPI',
             'Scorn', 'Awful', 'Disgust', 'Hate', 
             'Humiliate', 'Selfish', 'Tragic', 'Bothersome', 
             'Hatred', 'Hurtful', 'Sickening', 'Yucky'
-        ])
+        ]),
 	mWords : API.shuffle([
             'Man', 'Son', 'Father', 'Boy', 'Uncle',
             'Grandpa', 'Husband', 'Male'
@@ -67,7 +67,7 @@ define(['managerAPI',
 	sWords : API.shuffle([
             'Astronomy', 'Math', 'Chemistry', 'Physics', 
             'Biology', 'Geology', 'Engineering'
-        ])
+        ]),
 	lWords : API.shuffle([
             'History', 'Arts', 'Humanities', 'English', 
             'Philosophy', 'Music', 'Literature'
