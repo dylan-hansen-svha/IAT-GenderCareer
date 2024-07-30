@@ -92,6 +92,12 @@ define(['managerAPI',
             scriptUrl: 'raceiat.js'
         }],
 
+	gendercareer: [{
+            type: 'time',
+            name: 'gendercareer',
+            scriptUrl: 'gendercareer.js'
+        }],
+
         lastpage: [{
             type: 'message',
             name: 'lastpage',
