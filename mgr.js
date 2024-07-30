@@ -57,20 +57,19 @@ define(['managerAPI',
             'Hatred', 'Hurtful', 'Sickening', 'Yucky'
         ]),
 	mWords : API.shuffle([
-            'Man', 'Son', 'Father', 'Boy', 'Uncle',
-            'Grandpa', 'Husband', 'Male'
+            'Ben', 'Paul', 'Daniel', 'John', 'Jeffrey'
         ]), 
         fWords : API.shuffle([
-            'Mother', 'Wife', 'Aunt', 'Woman', 
-            'Girl', 'Female', 'Grandma', 'Daughter'
+            'Rebecca', 'Michelle', 'Emily', 'Julia', 
+            'Anna'
         ]),
 	sWords : API.shuffle([
-            'Astronomy', 'Math', 'Chemistry', 'Physics', 
-            'Biology', 'Geology', 'Engineering'
+            'Career', 'Corporation', 'Salary', 'Office', 
+            'Professional', 'Management', 'Business'
         ]),
 	lWords : API.shuffle([
-            'History', 'Arts', 'Humanities', 'English', 
-            'Philosophy', 'Music', 'Literature'
+            'Wedding', 'Marriage', 'Parents', 'Relatives', 
+            'Family', 'Home', 'Children'
         ])
     });
 
